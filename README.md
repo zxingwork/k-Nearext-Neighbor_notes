@@ -33,3 +33,10 @@ def classify0(inX, dataSet, labels, k):
 group, labels = createDataSet()
 print(classify0([0, 0], group, labels, 3))
 ```
+
+### 算法步骤：
+    1.计算已知类别数据集中的点与当前之间的距离
+    2.按照距离递增次序排序
+    3.选取与当前点距离最小的k个点
+    4.确定前k个点所在的类别的出现频率
+    5.返回前k个点出现频率最高的类别作为当前点的预测分类
